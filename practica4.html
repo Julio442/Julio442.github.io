@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laylout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Franklin Gothic Medium';
+        }
+        header{
+            background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+        nav{
+            float: left;
+            width: 20%;
+            height: 200px;
+            background-color: white;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0%;
+        }
+        article{
+            float: left;
+            padding: 10px;
+            width: 80%;
+            background-color: whitesmoke;
+            height: 200px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            padding: 10px;
+            text-align: center;
+        }
+        @media(max-width: 600px){
+            nav, article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Mejores Paginas De Juegos</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="https://store.steampowered.com/?l=spanish">STEAM</a></li>
+                <li><a href="https://www.gog.com/">GOG</a></li>
+                <li><a href="https://www.epicgames.com/site/es-ES/home">EPIC</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h3>STEAM god</h3>
+            <p>
+                algo
+            </p>
+            <p>
+                algo2
+            </p>
+        </article>
+    </section>
+    <footer>
+        <p>Beltran Cardenas Julio Esteban &copy;</p>
+    </footer>
+</body>
+</html>
