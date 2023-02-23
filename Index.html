@@ -5,14 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+}
+
+.P1 {
+  border-radius: 60%;
+  transition: width .25s, box-shadow .25s;
+  width: 160px;
+}
+
+.P1:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  width: 200px;
+}
+    </style>
 </head>
 <body>
-    <h2>Portafolio</h2>
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(2, 2, 2);">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: white;" href="#">Index</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: grey;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color: white;" href="Index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://github.com/Julio442" class="nav-link" style="color: white" >GitHub</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCFviluH3F3T42iRAgVPt4Ag">Youtube</a></li>
+                  <li><a class="dropdown-item" href="#">Algo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Porque estas aqui?</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" style="color: white;">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" style="color: white;" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
-    <p>Practica 1</p>
-    <a href="practica1.html"><img src="https://media.tenor.com/g1bZgt4-tL4AAAAM/skull.gif"></a><br><br>
+      <p style = "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+        <h2>Practica 1</h2>
+        </p>
+    <a href="practica1.html"><img src="https://media.tenor.com/g1bZgt4-tL4AAAAM/skull.gif" class="P1"></a>
+    <br>
+    <p style = "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+        <h2>Practica 2</h2>
+        </p>
+    <a href="Practica2.html"><img src="https://imgs.search.brave.com/JLSmQ-ko8i2JjXI2Uv5ASbr39wxrF-ya-Mx3UjsJR6k/rs:fit:640:640:1/g:ce/aHR0cHM6Ly9tZWRp/YTEudGVub3IuY29t/L2ltYWdlcy8yMGZk/YjJhMjliMWVjMmQz/MTZlYzJjMmUwZmNh/OGI0Yi90ZW5vci5n/aWY_aXRlbWlkPTE1/MDY0MTYy.gif" class="P1"></a>
+    <br>
+    <p style = "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+        <h2>Practica 3</h2>
+        </p>
+    <a href="practica3.html"><img src="https://media.tenor.com/f_saBHiUTz0AAAAM/cute-cat.gif" class="P1"></a>
+    <br>
+    <p style = "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+        <h2>Practica 4</h2>
+        </p>
+    <a href="practica4.html"><img src="https://media.tenor.com/OeXcTSgd1_kAAAAd/imspeee-ed-speed.gif" class="P1"></a>
+    <br>
+    <p style = "font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;">
+        <h2>Practica 5</h2>
+        </p>
+    <a href="practica5.html"><img src="https://media.tenor.com/p5DzAK8I_VgAAAAd/enel-eneru.gif" class="P1"></a>
 
+    <footer class="fixed-bottom text-center p-1 ">
+    <h4>Index &copy; 2023</h4></footer>
 
-    <h2>Beltran Cardenas Julio Esteban</h2>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.6.3.js"></script>
 </body>
 </html>
