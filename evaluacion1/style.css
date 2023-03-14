@@ -1,0 +1,144 @@
+.Contenido{
+    background-image: url(gamer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    height: 100vh;
+}
+.Contenido h1{
+    font-size: 40px;
+
+}
+.Contenido p{
+    font-size: 20px;
+    margin-top: 2opx;
+}
+.Contenido button{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: #f63e4e;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.si{
+    text-align: center;
+    margin: 50px 0;
+    color: black;
+}
+.no{
+    padding: 10px 5%;
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.productos .card{
+    width: 310px;
+    background: whitesmoke;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.productos .card img{
+    height: 250px;
+    width: 100%;
+}
+.productos .card .des{
+    padding: 5px 20px;
+    opacity: 0.8;
+
+}
+.productos .card .titulo{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+.productos .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+.productos .card .box .precio{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.productos .card .box .btn{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+}
+.productos .card .box .btn:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white;
+}
+.a{
+    text-align: center;
+    margin: 50px 0;
+    color: black;
+}
+.contactos .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+    gap:1rem;
+
+}
+.contactos .row .mapa{
+    flex: 5 5 45px;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.contactos .row form{
+    flex: 4 4 25px;
+    
+}
+.contactos .row form .inputbox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border:var(--border);
+}
+.contactos .row form .inputbox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #000000;
+    text-transform: none;
+}
+.algo{
+    font-size: 13px;
+    color: #f63e4e;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e4e;
+    border-radius: 20px;
+    
+}
+.algo:hover{
+    cursor: pointer;
+    background-color: #f63e4e;
+    color: white; 
+}
+
