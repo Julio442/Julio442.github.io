@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-03-2023 a las 02:46:44
+-- Tiempo de generación: 28-03-2023 a las 03:02:28
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `tienda en linea`
+-- Base de datos: `tienda`
 --
 
 -- --------------------------------------------------------
@@ -57,6 +57,31 @@ CREATE TABLE `productos` (
   `categoria_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas`
+--
+
+CREATE TABLE `ventas` (
+  `id` int(11) NOT NULL,
+  `total` float NOT NULL,
+  `fecha` float NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `venta_productos`
+--
+
+CREATE TABLE `venta_productos` (
+  `id` int(11) NOT NULL,
+  `ventas_id` int(11) NOT NULL,
+  `productos_id` int(11) NOT NULL,
+  `contidad` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Índices para tablas volcadas
 --
@@ -75,6 +100,20 @@ ALTER TABLE `productos`
   ADD KEY `categoria_id` (`categoria_id`);
 
 --
+-- Indices de la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `venta_productos`
+--
+ALTER TABLE `venta_productos`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `ventas_id` (`ventas_id`),
+  ADD KEY `productos_id` (`productos_id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -91,6 +130,12 @@ ALTER TABLE `productos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `venta_productos`
+--
+ALTER TABLE `venta_productos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -99,6 +144,13 @@ ALTER TABLE `productos`
 --
 ALTER TABLE `productos`
   ADD CONSTRAINT `productos_ibfk_1` FOREIGN KEY (`categoria_id`) REFERENCES `categorias` (`id`);
+
+--
+-- Filtros para la tabla `venta_productos`
+--
+ALTER TABLE `venta_productos`
+  ADD CONSTRAINT `venta_productos_ibfk_1` FOREIGN KEY (`ventas_id`) REFERENCES `ventas` (`id`),
+  ADD CONSTRAINT `venta_productos_ibfk_2` FOREIGN KEY (`productos_id`) REFERENCES `productos` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
