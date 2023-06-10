@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Configurar juego Ahorcado</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body>
-    <div class="row">
-        <h1>Configurar Juego</h1><hr>
-        <form action="Practica6.php" method="post">
-            <div class="form-group">
-                <label for="">Nombre del jugador</label>
-                <input type="text" required name="jugador" class="form-control">
-            </div><br>
-            <div class="form-group">
-                <label for="">Palabra:</label>
-                <input type="text" required name="palabra" class="form-control">
-            </div><br>
-            <div class="form-group">
-                <label for=""># vidas:</label>
-                <input type="number" required name="vidas" class="form-control">
-            </div><br>
-            <div>
-                <input type="submit" class="btn btn-primary">
-            </div>
-        </form>
+<body> 
+    <div class="container">
+        <div class="row">
+            <h1>Configurar Juego</h1><hr>
+            <form action="Practica6.php" method="POST">
+                <div class="form-group">
+                    <label for="">Nombre del jugador:</label>
+                    <input type="text" required name="jugador" class="form-control" >
+                </div><br>
+                <div class="form-group">
+                    <label for="">Palabra:</label>
+                    <input type="text" required name="palabra" class="form-control" >
+                </div><br>
+                <div class="form-group">
+                    <label for=""># vidas:</label>
+                    <input type="number" required name="vidas" class="form-control">
+                </div><br>
+                <div>
+                    <input type="submit" class="btn btn-primary">
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>
