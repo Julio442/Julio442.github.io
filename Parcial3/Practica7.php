@@ -19,12 +19,18 @@
     ?>
     <div class="container">
         <h2>Practica 7</h2>
-        <form action="">
+        <form action="Practica7.php" method="post">
+            <input type="submit" value="Jugar" class="btn btn-success"><hr>
             <div class="row">
                 <?php
                 for($i=100; $i>0; $i--){
+                    if($i==4 || $i==9 ||$i==20 ||$i==28 || $i==40 || $i==63 || $i==71)
                     echo "<div class='col-1 card' m-1 casilla' style='background-color:".$colores[rand(0,3)].";'>".$i."</div>";
-                }
+                }elseif($i==4 || $i==9 ||$i==20 ||$i==28 || $i==40 || $i==63 || $i==71)
+                    echo "<div class='col-1 card' m-1 casilla' style='background-color:".$colores[rand(0,3)].";'>".$i."</div>";
+                    
+                
+                
                 ?>
             </div>
         </form>
